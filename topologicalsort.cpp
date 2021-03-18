@@ -34,11 +34,11 @@ int main()
 	{
 		if(!vis[i])
 			dfs(i,graph,vis);
-		while(!q.empty())
-		{
-			topsort.push_back(q.top());
-			q.pop();
-		}
+	}
+	while(!q.empty())
+	{
+		topsort.push_back(q.top());
+		q.pop();
 	}
 	for(int i=0;i<topsort.size();++i)
 		cout<<topsort[i]<<" ";
